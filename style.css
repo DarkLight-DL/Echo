@@ -1,0 +1,265 @@
+
+.container-fluid{
+    font-family: "Montserrat", sans-serif;
+}
+.dropdown>.dropdown-menu{
+    background-color:rgb(248, 249, 250);
+    color:rgb(125, 124, 124);
+    border-style: none!important;
+
+
+    
+}
+.border{
+    color: #FBB244;
+    border: 5px solid #909096;
+    border-radius: 20px;
+    height: 45px;
+    width: 150px;
+    margin-top: -10px;
+    background-color: #081158;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    border-style: none!important; 
+
+}
+
+
+.border:hover{
+    background-color:white;
+    color:black;
+}
+
+.welcome1{
+    margin-bottom: 10px;
+    width: 150px;
+    text-align: center;
+    color: #FBB244;
+    border: 2px solid rgba(255, 239, 214, 0.2);
+    border-radius: 10px;
+    background-color: rgba(251, 178, 68, 0.2);
+    font-size: 13px;
+}
+
+.welcome2{
+    margin: 10px;
+    color: #081158;
+    font-size: 37px;
+
+}
+
+.welcome3{
+
+    margin: 10px;
+    text-align: left;
+    font-size: 16px;
+
+}
+
+.button1{
+    color: white;
+    height: 50px;
+    width: 150px;
+    padding-bottom: 3px;
+    text-align: center;
+    align-content: center;
+    background-color: #081158;
+    border-radius: 30px;
+}
+
+.button2{
+    color: #081158;
+    height: 50px;
+    width: 150px;
+    padding-bottom: 3px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid gray;
+    border-radius: 30px;
+}
+
+.button1:hover{
+    color: #081158 !important;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+
+.button2:hover{
+    color:white !important;
+    border: 1px solid gray;
+    background-color:#081158 ;
+}
+
+
+.features1{
+    margin-bottom: 10px;
+    padding: 5px;
+    height: 23px;
+    width: 90px;
+    text-align: center;
+    color: #FBB244;
+    border-radius: 10px;
+    background-color: rgba(251, 178, 68, 0.2);
+    font-size: 10px;
+}
+
+.about1{
+    margin-bottom: 10px;
+    width: 90px;
+    text-align: center;
+    color: #FBB244;
+    border: 2px solid rgba(255, 239, 214, 0.2);
+    border-radius: 10px;
+    background-color: rgba(251, 178, 68, 0.2);
+    font-size: 13px;
+}
+
+.about2{
+    margin: 10px;
+    color: #081158;
+    font-size: 40px;
+
+}
+
+.about3{
+
+    margin: 10px;
+    text-align: left;
+    font-size: 16px;
+
+}
+.about4{
+
+    margin: 10px;
+    text-align: left;
+    font-size: 16px;
+
+}
+.about5{
+    position: relative;
+}
+.about5 ul{
+    list-style: none;
+    
+}
+.about5 li::before{
+    position: absolute;
+    content: "✓";
+    left: 1%;
+
+}
+
+
+.button3{
+    color: white;
+    height: 50px;
+    width: 150px;
+    padding-bottom: 3px;
+    text-align: center;
+    align-content: center;
+    background-color: #081158;
+    border-radius: 30px;
+}
+
+.button3:hover{
+    color: #081158 !important;
+    border: 1px solid gray;
+    background-color: white;
+}
+
+.services1{
+    margin-bottom: 10px;
+    width: 90px;
+    text-align: center;
+    color: #FBB244;
+    border: 2px solid rgba(255, 239, 214, 0.2);
+    border-radius: 10px;
+    background-color: rgba(251, 178, 68, 0.2);
+    font-size: 13px;
+}
+
+.services2{
+    margin: 10px;
+    color: #081158;
+    font-size: 45px;
+
+}
+
+
+.Copyright a:hover{
+    font-size: 17px;
+    color: brown !important;
+}
+.link1:hover{
+    color: black!important;
+}
+
+
+.link2:hover{
+    color: rgb(93, 93, 95)!important;
+}
+
+.link3:hover{
+    color: rgb(227, 97, 42) !important;
+}
+.link4:hover{
+    color: blue !important;
+}
+
+@media screen and (min-width:0px) and (max-width:991px) {
+
+    .border.border-secondary{
+        background-color:rgb(248, 249, 250);
+        color:rgb(125, 124, 124);
+        border-style: none!important; 
+    }
+    .border:hover{
+        color:black;
+    }
+    .li:hover{
+        color: blue;
+
+    }
+    .Services3{
+        margin: 0 !important; 
+        padding: 0 !important;
+        
+    }
+}
+
+@media screen and (min-width:992px){
+    .features3{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .about1{
+        margin-top: 200px
+    }
+    .about2{
+        font-size: 60px;
+    }
+    .Services3{
+        margin-left: 20% !important;
+        margin-right: 20% !important;
+        
+    }
+    .content{
+     margin-left: 5% !important;
+     margin-right: 5%;
+     }
+    .content1{
+        width: 30% !important;
+    }
+    .content2{
+        width: 200px !important;
+    }
+    .content3{
+        width: 200px !important;
+    }
+    .content4{
+        width: 20% !important;
+    }
+    
+}

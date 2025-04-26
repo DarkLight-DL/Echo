@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-echo</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+
+
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 15px;
+            min-height: 100px;
+            background: radial-gradient(circle, rgba(220, 238, 174, 1) 0%, rgba(148, 187, 233, 1) 100%);
+        }
+
+        .swiper-slide:hover {
+
+            border: #081158 solid;
+        }
+
+
+        .swiper-slide img {
+            width: 90%;
+            height: 200px;
+            border-radius: 15px;
+            object-fit: contain;
+            margin: 10px;
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+
+            font-weight: 900;
+            color: rgb(245, 245, 247) !important;
+        }
+
+        .card {
+            border: none;
+            background-color: #d9d9d900;
+        }
+
+        .card-body {
+            text-align: start;
+            border-radius: 15px;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+
+
+
+
+    <div class="container-fluid m-0 p-2">
+        <nav class="navbar navbar-expand-lg  m-0 p-2 pt-5">
+            <div class="container-fluid">
+                <a class="navbar-brand ms-3 fs-2 fw-bolder" href="#">ECHO</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">ECHO</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav ms-auto pe-5">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#" style="color: #081158;">Home</a>
+                            </li>
+                            <li class="nav-item dropdown mx-2">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Menu One</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu Two</a></li>
+                                    <li><a class="dropdown-item" href="#">Menu Three</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">About</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">Services</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">FAQ</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">Contact Us</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="#">
+                                    <div class="border border-secondary">Download now</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="row welcome m-lg-3 m-0 p-4">
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12" style="margin-top: 140px;">
+            <div class="welcome1 ms-lg-5 ms-md-2 ms-sm-0 ms-0"><b>Welcome to our site </b></div>
+            <div class="welcome2 ms-lg-5 ms-md-2 ms-sm-0 ms-0 fw-bolder">
+                <p>Expert SEO, SEM Services in London</p>
+            </div>
+            <div class="welcome3 ms-lg-5 ms-md-2 ms-sm-0 ms-0 mb-5 text-secondary">
+                <p>Far far away, behind the word mountains, far from the countries Vedalia and Consonant, there live the
+                    blind
+                    texts. Separated they live in Book marks grove right at the coast of the Semantics, a large language
+                    ocean.
+                </p>
+            </div>
+
+            <div class="welcome4 d-flex ms-lg-5">
+                <a style="text-decoration: none;" href="#">
+                    <div class="button1 "> How we work</div>
+                </a>
+                <a style="text-decoration: none; " href="#">
+                    <div class="button2 ms-3"> Contact us</div>
+                </a>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+            <div class="img1 ms-lg-0 mt-md-5 mt-sm-5 mt-5">
+                <img class="img-fluid" src="./image/hero_1.png.webp" alt="hero">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row m-0 p-2">
+        <div class="features d-flex align-items-sm-center justify-content-center "
+            style="margin-top: 140px  ; text-align: center;">
+            <p class="features1 fw-bolder"> FEATURES</p>
+        </div>
+        <div class="features d-flex align-items-sm-center justify-content-center "
+            style="color: #081158; font-size:34px  ; text-align: center;">
+            <p class="features2 fw-bolder"> Our Features </p>
+        </div>
+        <div class="features d-flex align-items-sm-center justify-content-center text-secondary"
+            style=" font-size:14px; text-align: center;margin-bottom: 50px;">
+            <p class="features3"> Far far away, behind the word mountains, far from the countries Vedalia and Consonant,
+                there
+                live the blind texts. Separated they live in Book marks grove right at the coast of the Semantics, a
+                large
+                language ocean.</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <div class="row m-0 p-2 d-flex">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+
+            <div class="card " style="height: 300px;width: auto;border-style: none;">
+                <div class="dot1"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:10%; margin-left:45%; position: absolute; ">
+                </div>
+                <i class="fa-solid fa-rocket fa-3x"
+                    style="margin-top: 14%;padding-left: 42%;position: absolute; color: rgb(150, 149, 149);"></i>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder" style="margin-top: 30%;text-align: center;">Marketing Analysis</h5>
+                    <p class="card-text text-secondary" style="text-align: center;">Far far away, behind the word
+                        mountains, far
+                        from the countries Vedalia and Consonant, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+
+            <div class="card " style="height: 300px;width: auto;border-style: none;">
+                <div class="dot2"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:10%; margin-left:45%; position: absolute; ">
+                </div>
+                <i class="fa-solid fa-link fa-3x"
+                    style="margin-top: 13%;padding-left: 40%;position: absolute; color: rgb(150, 149, 149);"></i>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder" style="margin-top: 30%;text-align: center;">Marketing Analysis</h5>
+                    <p class="card-text text-secondary " style="text-align: center;">Far far away, behind the word
+                        mountains, far
+                        from the countries Vedalia and Consonant, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+
+            <div class="card " style="height: 300px;width: auto;border-style: none;">
+                <div class="dot3"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:10%; margin-left:45%; position: absolute; ">
+                </div>
+                <i class="fa-solid fa-trophy fa-3x"
+                    style="margin-top: 13%;padding-left: 40%;position: absolute;color: rgb(150, 149, 149);"></i>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder" style="margin-top: 30%;text-align: center;">Marketing Analysis</h5>
+                    <p class="card-text text-secondary" style="text-align: center;">Far far away, behind the word
+                        mountains, far
+                        from the countries Vedalia and Consonant, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="row about m-0 p-4">
+
+
+        <div class="col-lg-7 col-md-12 col-sm-12 col-12">
+            <div class="img2 ms-lg-0 mt-md-5 mt-sm-5 mt-5">
+                <img class="img-fluid" src="./image/about_1.png.webp" alt="about us" style="margin-top: 150px;">
+            </div>
+        </div>
+
+        <div class="col-lg-5 col-md-12 col-sm-12 col-12">
+            <div class="about1 ms-lg-5 ms-md-2 ms-sm-0 ms-0 fw-bolder">About us</b></div>
+            <div class="about2 ms-lg-5 ms-md-2 ms-sm-0 ms-0 fw-bolder">
+                <p> Why our agency?</p>
+            </div>
+            <div class="about3 ms-lg-5 ms-md-2 ms-sm-0 ms-0 text-secondary">
+                <p>Separated they live in Book marks grove right at the coast of the Semantics, a large language ocean.
+                </p>
+            </div>
+            <div class="about4 ms-lg-5 ms-md-2 ms-sm-0 ms-0 text-secondary">
+                <p>Far far away, behind the word mountains, far from the countries Vedalia and Consonant, there live the
+                    blind
+                    texts. Separated they live in Book marks grove right at the coast of the Semantics, a large language
+                    ocean.
+                </p>
+            </div>
+
+            <div class="about5 ms-lg-5 ms-md-2 ms-sm-0 ms-0 mb-5 text-secondary">
+                <ul>
+                    <li>Behind the word mountains</li>
+                    <li>Book marks grove right at the coast</li>
+                    <li>Semantics, a large language</li>
+                </ul>
+            </div>
+
+            <div class=" about6 d-flex">
+                <a style="text-decoration: none;" href="#">
+                    <div class="button3 ms-lg-5 ms-md-2 ms-sm-0 ms-0 "> About us</div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="row Services d-flex justify-content-center align-items-center m-0 p-2">
+        <div class="Services1 d-flex align-items-sm-center justify-content-center "
+            style="margin-top: 150px  ; text-align: center;">
+            <p class="features1 fw-bolder">SERVICES</p>
+        </div>
+        <div class="Services2 d-flex align-items-sm-center justify-content-center "
+            style="color: #081158; font-size:40px; text-align: center;">
+            <p class="features2 fw-bolder">Our Services</p>
+        </div>
+    </div>
+
+    <div class="row Services3 d-flex justify-content-center align-items-center ">
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12" style=" position: relative; ">
+            <div class="card m-lg-3 m-md-2 m-sm-2 m-2 mx-1" style="height: auto;width: auto; border: 2px solid rgb(227, 225, 225);">
+                <div class="dot1 "
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:20px; margin-left:11%; position: absolute;  ">
+                    <i class="fa-solid fa-shield-halved fa-3x"
+                        style="margin-top: 15px;padding-left: 8%;position: absolute;color: rgb(150, 149, 149);"></i>
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title fw-bolder" style="margin-top: 1%;margin-left: 30%;text-align:left;">
+                        Design Marketing
+                    </h5>
+                    <p class="card-text text-secondary" style="margin-left: 30%;text-align:left;">
+                        Far far away, behindthe word mountains, far from the countries Vedalia and Consonant,
+                        there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+            <div class="card m-lg-3 m-md-2 m-sm-2 m-2 mx-1" style="height: auto;width: auto; border: 2px solid rgb(227, 225, 225);">
+                <div class="dot1"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:20px; margin-left:11%; position: absolute; ">
+                    <i class="fa-solid fa-bullhorn fa-3x"
+                        style="margin-top: 15px;padding-left: 8%;position: absolute;color: rgb(150, 149, 149);"></i>
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title fw-bolder" style="margin-top: 1%;margin-left: 30%;text-align:left;">
+                        Internet Marketing
+                    </h5>
+                    <p class="card-text text-secondary" style="margin-left: 30%;text-align:left;">Far far away, behind
+                        the word
+                        mountains, far from the countries Vedalia and Constantia, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+            <div class="card m-lg-3 m-md-2 m-sm-2 m-2 mx-1" style="height: auto;width: auto; border: 2px solid rgb(227, 225, 225);">
+                <div class="dot1"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:20px; margin-left:11%; position: absolute; ">
+                    <i class="fa-regular fa-clipboard fa-3x"
+                        style="margin-top: 15px;padding-left: 8%;position: absolute;color: rgb(150, 149, 149);"></i>
+                    <i class="fa-solid fa-pen-fancy fa-3x"
+                        style="margin-top: 10px;padding-left: 20%;position: absolute;color: rgb(150, 149, 149);"></i>
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title fw-bolder" style="margin-top: 1%;margin-left: 30%;text-align:left;">Social
+                        Marketing
+                    </h5>
+                    <p class="card-text text-secondary" style="margin-left: 30%;text-align:left;">Far far away, behind
+                        the word
+                        mountains, far from the countries Visalia and Consonant, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+            <div class="card m-lg-3 m-md-2 m-sm-2 m-2 mx-1" style="height: auto;width: auto; border: 2px solid rgb(227, 225, 225);">
+                <div class="dot1"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:20px; margin-left:11%; position: absolute; ">
+                    <i class="fa-solid fa-rocket fa-3x"
+                        style="margin-top: 15px;padding-right: 450%;position: absolute;color: rgb(150, 149, 149);"></i>
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title fw-bolder" style="margin-top: 1%;margin-left: 30%;text-align:left;">SEO
+                        Marketing</h5>
+                    <p class="card-text text-secondary" style="margin-left: 30%;text-align:left;">Far far away, behind
+                        the word
+                        mountains, far from the countries Vedalia and Consonant, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+            <div class="card m-lg-3 m-md-2 m-sm-2 m-2 mx-1" style="height: auto;width: auto; border: 2px solid rgb(227, 225, 225);">
+                <div class="dot1"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:20px; margin-left:11%; position: absolute; ">
+                    <i class="fa-solid fa-link fa-3x"
+                        style="margin-top: 15px;padding-left: 1%;position: absolute;color: rgb(150, 149, 149);"></i>
+                </div>
+                <div class="card-body ">
+                    <h5 class="card-title fw-bolder"
+                        style="margin-top: 1%;margin-left: 30%;text-align:left; font-size: 18px;">
+                        BackLinks Marketing</h5>
+                    <p class="card-text text-secondary" style="margin-left: 30%;text-align:left;">Far far away, behind
+                        the word
+                        mountains, far from the countries Vedalia and Consonant, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-12 col-sm-12 col-12 " style=" position: relative;">
+            <div class="card m-lg-3 m-md-2 m-sm-2 m-2 mx-1" style="height: auto;width: auto; border: 2px solid rgb(227, 225, 225);">
+                <div class="dot1"
+                    style=" height: 50px; width: 50px;border-radius: 50%;background-color: #ffc670;margin-top:20px; margin-left:11%; position: absolute; ">
+                    <i class="fa-solid fa-trophy fa-3x"
+                        style="margin-top: 15px;padding-left: 1%;position: absolute;color: rgb(150, 149, 149);"></i>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title fw-bolder" style="margin-top: 1%;margin-left: 30%;text-align:left;">Design 
+                        Marketing
+                    </h5>
+                    <p class="card-text text-secondary" style="margin-left: 30%;text-align:left;">Far far away, behind
+                        the word
+                        mountains, far from the countries Vedalia and Consonant, there live the blind texts.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+
+    <div class="row testimonials m-0 p-2 bg-light">
+        <div class="features d-flex align-items-sm-center justify-content-center "
+            style="margin-top: 40px  ; text-align: center;">
+            <p class="features1 fw-bolder"> TESTIMONIALS</p>
+        </div>
+        <div class="features d-flex align-items-sm-center justify-content-center "
+            style="color: #081158; font-size:34px  ; text-align: center;">
+            <p class="features2 fw-bolder">Testimonials</p>
+        </div>
+        <div class="features d-flex align-items-sm-center justify-content-center text-secondary"
+            style=" font-size:16px; text-align: center;margin-bottom: 10px;">
+            <p class="features3 m-2"> Far far away, behind the word mountains, far from the countries Vedalia and
+                Consonants,
+                there live the blind texts. Separated they live in Book marks grove right at the coast of the Semantics,
+                a large
+                language ocean.</p>
+        </div>
+
+
+
+
+
+        <div class="container mt-5 mb-5">
+            <div class="swiper mySwiper1">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <img src="./image/pro1.jpg" alt="Web Development Course Image">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack <br />Web Development</h5>
+                                <p class="card-text"><i class="fa-solid fa-clock-rotate-left"></i> 3 Months</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/pro2.jpg" alt="Mobile Development Course Image">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack <br />Mobile Development</h5>
+                                <p class="card-text"><i class="fa-solid fa-clock-rotate-left"></i> 3 Months</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/pro3.jpg">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack <br />Web Development</h5>
+                                <p class="card-text"><i class="fa-solid fa-clock-rotate-left"></i> 3 Months</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/pro4.jpg">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack <br />Mobile Development</h5>
+                                <p class="card-text"><i class="fa-solid fa-clock-rotate-left"></i> 3 Months</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/pro5.jpg">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack <br />Mobile Development</h5>
+                                <p class="card-text"><i class="fa-solid fa-clock-rotate-left"></i> 3 Months</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="./image/pro6.jpg" alt="Mobile Development Course Image">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Full Stack <br />Mobile Development</h5>
+                                <p class="card-text"><i class="fa-solid fa-clock-rotate-left"></i> 3 Months</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+
+
+    <div class="container m-0 p-2 ">
+        <div class="row justify-content-center text-start mt-5 m-2 my-sm-5">
+
+            <div class="col-lg-5 mx-lg-3  col-md-6 col-sm-12 mb-4 ">
+                <h6><b>About Colloid</b></h6>
+                <p class="text-secondary">Far far away, behind the word mountains, far from the countries Vedalia and
+                    Consonantia, there live the blind texts.</p>
+                <div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-brands fa-square-x-twitter fa-2x"
+                                    style="color: #081158; box-shadow: 0px 5px 10px -5px #081158;"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-brands fa-square-instagram fa-2x"
+                                    style="color: #081158; box-shadow: 0px 5px 10px -5px #081158;"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-brands fa-square-facebook fa-2x"
+                                    style="color: #081158; box-shadow: 0px 5px 10px -5px #081158;"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                <h6><b>Pages</b></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                <h6><b>Resources</b></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none">Blog</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">About</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="col-lg-2 col-md-6 col-sm-12 mb-4">
+                <h6><b>Contact</b></h6>
+                <ul class="list-unstyled">
+                    <li><a href="#" class="text-secondary text-decoration-none"><i
+                                class="fa-regular fa-envelope me-2"></i>info@webpage.com</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none"><i class="fa-solid fa-phone me-2"></i>+1
+                            222 444 6272</a></li>
+                    <li><a href="#" class="text-secondary text-decoration-none"><i
+                                class="fa-solid fa-map-location-dot me-2"></i>RD TN-75, Chennai</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+
+        <div class="row m-5 d-flex justify-content-center " style="text-align: center;height: 200px;">
+            <di>
+                <p class="Copyright text-secondary">Copyright ©2024 All rights reserved | This template is made with ❤️
+                    by
+                    <a class="text-secondary text-decoration-none" href="#"> Asik (●◡●) Ahamed</a>
+                </p>
+        </div>
+        </div>
+    </footer>
+
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        function initializeSwiper() {
+            new Swiper(".mySwiper1", {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+                slidesPerGroup: 1,
+                loop: true,
+                loopFillGroupWithBlank: true,
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                autoplay: {
+                    delay: 1500,
+                    disableOnInteraction: false,
+                },
+                effect: 'slide',
+                speed: 1500,
+                breakpoints: {
+                    1024: {
+                        slidesPerView: 4,
+                    },
+                    768: {
+                        slidesPerView: 3,
+                    },
+                    425: {
+                        slidesPerView: 2,
+                    },
+                    0: {
+                        slidesPerView: 1,
+                    }
+                }
+            });
+        }
+
+        initializeSwiper();
+    </script>
+</body>
+
+</html>
