@@ -604,10 +604,10 @@
 
         <div class="row m-5 d-flex justify-content-center " style="text-align: center;height: 200px;">
             <di>
-                <p class="Copyright text-secondary">Copyright ©2024 All rights reserved | This template is made with ❤️
-                    by
-                    <a class="text-secondary text-decoration-none" href="#"> Asik (●◡●) Ahamed</a>
+                <p class="Copyright text-secondary">
+
                 </p>
+
         </div>
         </div>
     </footer>
@@ -620,6 +620,12 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <script>
+    document.querySelector(".Copyright").innerHTML = `Copyright &copy;${new Date().getFullYear()}
+    All rights reserved | This template is made with
+    ❤️ by <a class="text-secondary text-decoration-none" href="#"> Asik (●◡●) Ahamed</a>`
+    ;
+
+
         function initializeSwiper() {
             new Swiper(".mySwiper1", {
                 slidesPerView: 'auto',
